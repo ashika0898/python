@@ -1,0 +1,92 @@
+Python 3.7.3 (default, Apr  3 2019, 05:39:12) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> Dict = {'Name':'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+>>> Dict
+{'Name': 'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+>>> print(Dict)
+{'Name': 'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+>>> x = Dict["Name"]
+>>> print(Dict)
+{'Name': 'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+>>> print(x)
+Ashika
+>>> Dict["Age"]=20
+>>> Dict
+{'Name': 'Ashika', 'Age': 20, 'Branch': 'IT', 'Section': 'B'}
+
+>>> for x in Dict:
+  print(x)
+Name
+Age
+Branch
+Section
+>>> Dict
+{'Name': 'Ashika', 'Age': 20, 'Branch': 'IT', 'Section': 'B'}
+>>> del Dict[Age]
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    del Dict[Age]
+NameError: name 'Age' is not defined
+>>> Dict.pop(Age)
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    Dict.pop(Age)
+NameError: name 'Age' is not defined
+>>> Dict.clear()
+>>> Dict
+{}
+>>> Dict = {Name: 'Ashika', Age: '21', Branch: 'IT', Section: 'B'}
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    Dict = {Name: 'Ashika', Age: '21', Branch: 'IT', Section: 'B'}
+NameError: name 'Name' is not defined
+>>>  Dict = {'Name':'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+ 
+SyntaxError: unexpected indent
+>>> Dict = {'Name':'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+>>> Dict
+{'Name': 'Ashika', 'Age': '21', 'Branch': 'IT', 'Section': 'B'}
+>>> de
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    de
+NameError: name 'de' is not defined
+>>>  del Dict["Age"]
+ 
+SyntaxError: unexpected indent
+>>> del Dict["Age"]
+>>> Dict
+{'Name': 'Ashika', 'Branch': 'IT', 'Section': 'B'}
+>>> Dict.popitem()
+('Section', 'B')
+>>> 
+>>> Dict.popitem("Branch")
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    Dict.popitem("Branch")
+TypeError: popitem() takes no arguments (1 given)
+>>> Dict
+{'Name': 'Ashika', 'Branch': 'IT'}
+>>> Dict.clear()
+>>> Dict
+{}
+>>> Dict.delete()
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    Dict.delete()
+AttributeError: 'dict' object has no attribute 'delete'
+>>> dict1={1:'apple',2:'mango',3:'grapes'}
+>>> dict2={1:'tomato',2:'potato',3:'onion'}
+>>> Dict.copy()
+{}
+>>> dict1.copy()
+{1: 'apple', 2: 'mango', 3: 'grapes'}
+>>> dict2.copy()
+{1: 'tomato', 2: 'potato', 3: 'onion'}
+>>> dict1.copy(dict2)
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    dict1.copy(dict2)
+TypeError: copy() takes no arguments (1 given)
+>>> 
